@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar assinatura</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="assinatura.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="wrapper card">
+            <h2>Faça sua assinatura</h2>
+            <form>
+                <div class="Form">
+                    <input type="text" id="name" placeholder="Nome" onkeyup="submitName()" required>
+                    <input required type="tel" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" onkeyup="submitTel()" placeholder="Telefone">
+                    <input type="email" id="email" placeholder="Email" onkeyup="submitEmail()" required>
+                    <input type="text" id="setor" placeholder="Setor" onkeyup="submitSetor()" required>
+                </div>
+            </form>
+            
+        </div>
+        <div class='container-assinatura'>
+            <table cellpadding="0" cellspacing="0" class="table-container">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" class="table-container">
+                                <tbody>
+                                    <tr>
+                                        <td width="150" style="vertical-align: middle;"><span class="sc-kgAjT cuzzPp"
+                                                style="margin-right: 20px; display: block;"><img
+                                                    src="../img/C2Ha7md.png"
+                                                    role="presentation" width="130" class="sc-cHGsZl bHiaRe"
+                                                    style="max-width: 130px;"></span></td>
+                                        <td style="vertical-align: middle;">
+                                            <h3 color="#000000" class="sc-fBuWsC eeihxG"
+                                                style="margin: 0px; font-size: 18px; color: rgb(0, 0, 0);">
+                                                <span id="name_return"></span></h3>
+                                            <p color="#000000" font-size="medium" class="sc-fMiknA bxZCMx"
+                                                style="margin: 0px; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
+                                                <span id="nome_assinado">Meu nome</span></p>
+                                            <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF"
+                                                style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
+                                                <span id="setor_assinado">Meu&nbsp;setor</span><span>&nbsp;|&nbsp;</span><span>Grupo Certare</span>
+                                            </p>
+                                            <p color="#000000" font-size="medium" class="sc-eqIVtm kRufpp"
+                                                style="color: rgb(0, 0, 0); margin: 0px; font-size: 14px; line-height: 22px;">
+                                                <span>"Aproximando Pessoas"</span></p>
+                                        </td>
+                                        <td width="30">
+                                            <div style="width: 30px;"></div>
+                                        </td>
+                                        <td color="#367f59" direction="vertical" width="1" class="sc-jhAzac hmXDXQ"
+                                            style="width: 1px; border-bottom: none; border-left: 1px solid rgb(54, 127, 89);">
+                                        </td>
+                                        <td width="30">
+                                            <div style="width: 30px;"></div>
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <table cellpadding="0" cellspacing="0" class="table-container">
+                                                <tbody>
+                                                    <tr height="25" style="vertical-align: middle;">
+                                                        <td width="30" style="vertical-align: middle;">
+                                                            <table cellpadding="0" cellspacing="0" class="table-container">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="vertical-align: bottom;"><span
+                                                                                color="#367f59" width="11"
+                                                                                class="sc-jlyJG bbyJzT"
+                                                                                style="display: block; background-color: rgb(54, 127, 89);"><img
+                                                                                    src="../img/phone-icon-2x.png"
+                                                                                    color="#367f59" width="13"
+                                                                                    class="sc-iRbamj blSEcj"
+                                                                                    style="display: block; background-color: rgb(54, 127, 89);"></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td style="padding: 0px; color: rgb(0, 0, 0);"><a
+                                                                href="tel:85 3231-3992" color="#000000" class="sc-gipzik iyhjGb"
+                                                                style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span>85
+                                                                    3231-3992</span></a> | <a href="tel:85 999888888" id="tel_href"
+                                                                color="#000000" class="sc-gipzik iyhjGb"
+                                                                style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span id="tel_assinado">85
+                                                                    999888888</span></a></td>
+                                                    </tr>
+                                                    <tr height="25" style="vertical-align: middle;">
+                                                        <td width="30" style="vertical-align: middle;">
+                                                            <table cellpadding="0" cellspacing="0" class="table-container">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="vertical-align: bottom;"><span
+                                                                                color="#367f59" width="11"
+                                                                                class="sc-jlyJG bbyJzT"
+                                                                                style="display: block; background-color: rgb(54, 127, 89);"><img
+                                                                                    src="../img/email-icon-2x.png"
+                                                                                    color="#367f59" width="13"
+                                                                                    class="sc-iRbamj blSEcj"
+                                                                                    style="display: block; background-color: rgb(54, 127, 89);"></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td style="padding: 0px;"><a href="mailto:meu.nome@certare.com.br" id="email_href"
+                                                                color="#000000" class="sc-gipzik iyhjGb"
+                                                                style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span id="email_assinado">meu.nome@certare.com.br</span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr height="25" style="vertical-align: middle;">
+                                                        <td width="30" style="vertical-align: middle;">
+                                                            <table cellpadding="0" cellspacing="0" class="table-container">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="vertical-align: bottom;"><span
+                                                                                color="#367f59" width="11"
+                                                                                class="sc-jlyJG bbyJzT"
+                                                                                style="display: block; background-color: rgb(54, 127, 89);"><img
+                                                                                    src="../img/link-icon-2x.png"
+                                                                                    color="#367f59" width="13"
+                                                                                    class="sc-iRbamj blSEcj"
+                                                                                    style="display: block; background-color: rgb(54, 127, 89);"></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td style="padding: 0px;"><a href="https://www.grupocertare.com/"
+                                                                color="#000000" class="sc-gipzik iyhjGb"
+                                                                style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span>https://www.grupocertare.com/</span></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" class="table-container"
+                                style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td height="30"></td>
+                                    </tr>
+                                    <tr>
+                                        <td color="#367f59" direction="horizontal" height="1" class="sc-jhAzac hmXDXQ"
+                                            style="width: 100%; border-bottom: 1px solid rgb(54, 127, 89); border-left: none; display: block;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align: top;"><img
+                                                src="../img/Q3h682I.png"
+                                                role="presentation" width="130" class="sc-cHGsZl bHiaRe"
+                                                style="max-width: 130px; display: inline-block;"></td>
+                                        <td style="text-align: right; vertical-align: top;">
+                                            <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW"
+                                                style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial; display: inline-block;">
+                                                <tbody>
+                                                    <tr style="text-align: right;">
+                                                        <td><a href="https://pt-br.facebook.com/certareengenharia"
+                                                                color="#367f59" class="sc-hzDkRC kpsoyz"
+                                                                style="display: inline-block; padding: 0px; background-color: rgb(54, 127, 89);"><img
+                                                                    src="../img/facebook-icon-2x.png"
+                                                                    alt="facebook" color="#367f59" height="24"
+                                                                    class="sc-bRBYWo ccSRck"
+                                                                    style="background-color: rgb(54, 127, 89); max-width: 135px; display: block;"></a>
+                                                        </td>
+                                                        <td width="5">
+                                                            <div></div>
+                                                        </td>
+                                                        <td><a href="https://br.linkedin.com/company/certareengenhariaeconsultoria"
+                                                                color="#367f59" class="sc-hzDkRC kpsoyz"
+                                                                style="display: inline-block; padding: 0px; background-color: rgb(54, 127, 89);"><img
+                                                                    src="../img/linkedin-icon-2x.png"
+                                                                    alt="linkedin" color="#367f59" height="24"
+                                                                    class="sc-bRBYWo ccSRck"
+                                                                    style="background-color: rgb(54, 127, 89); max-width: 135px; display: block;"></a>
+                                                        </td>
+                                                        <td width="5">
+                                                            <div></div>
+                                                        </td>
+                                                        <td><a href="https://www.instagram.com/certareengenharia/"
+                                                                color="#367f59" class="sc-hzDkRC kpsoyz"
+                                                                style="display: inline-block; padding: 0px; background-color: rgb(54, 127, 89);"><img
+                                                                    src="../img/instagram-icon-2x.png"
+                                                                    alt="instagram" color="#367f59" height="24"
+                                                                    class="sc-bRBYWo ccSRck"
+                                                                    style="background-color: rgb(54, 127, 89); max-width: 135px; display: block;"></a>
+                                                        </td>
+                                                        <td width="5">
+                                                            <div></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="../logica.js"></script>
+</body>
+</html>
